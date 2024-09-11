@@ -13,7 +13,7 @@ const oauth2Client = new google.auth.OAuth2(
 );
 
 interface UploadVideoParams {
-  // @ts-ignore
+  // @ts-expect-error
   auth: any;
   videoFilePath: string;
   title: string;
