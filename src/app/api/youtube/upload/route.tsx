@@ -1,4 +1,4 @@
-
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 import { NextRequest, NextResponse } from 'next/server';
 import { google, youtube_v3 } from 'googleapis';
 import { cookies } from 'next/headers';
@@ -13,8 +13,7 @@ const oauth2Client = new google.auth.OAuth2(
 );
 
 interface UploadVideoParams {
-  // @ts-expect-error: The types for this library are incomplete
-  auth: google.auth.OAuth2Client;
+  auth: any;
   videoFilePath: string;
   title: string;
   description: string;
