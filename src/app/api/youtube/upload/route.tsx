@@ -13,8 +13,8 @@ const oauth2Client = new google.auth.OAuth2(
 );
 
 interface UploadVideoParams {
-  // @ts-expect-error
-  auth: any;
+  // @ts-expect-error: The types for this library are incomplete
+  auth: google.auth.OAuth2Client;
   videoFilePath: string;
   title: string;
   description: string;
