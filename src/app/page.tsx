@@ -1,7 +1,7 @@
-import HomePageComponent from "@/app/_compontents/home";
+import HomePage from "./_compontents/home";
 
-export default function Home() {
-  return (
-    <HomePageComponent />
-  );
-}
+const Home = () => {
+  return <HomePage />
+};
+
+export default Home
